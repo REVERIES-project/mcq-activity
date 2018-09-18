@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>activity-feedback demo</title>
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../activity-feedback.html">
+
+  <style is="custom-style" include="demo-pages-shared-styles">
+  </style>
+</head>
+
+<body unresolved>
+  <template is="dom-bind">
+    <div class="vertical-section-container centered">
+
+      <button aria-controls="feedback" onclick="showCorrect('#feedback')">Correct anwswer</button>
+      <button aria-controls="feedback" onclick="showWrong('#feedback')">Wrong anwswer</button>
+      <button aria-controls="feedback" onclick="reset('#feedback')">Reset</button>
+      <activity-feedback id="feedback" correct-message="Bravo c'est correct" wrong-message="Dommage c'est faux"></activity-feedback>
+    </div>
+  </template>
+  <script>
+    function showCorrect(selector) {
+      document.querySelector(selector).responseStatus='correct';
+    }
+
+    function showWrong(selector) {
+      document.querySelector(selector).responseStatus='wrong';
+    }
+    function reset(selector) {
+      document.querySelector(selector).responseStatus='';
+    }
+
+  </script>
+
+</body>
+
+</html>

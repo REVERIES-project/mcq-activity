@@ -1,0 +1,30 @@
+{
+  "name": "staticmedia-viewer",
+  "description": "Viewer for Markdown resource using marked-element ",
+  "main": "staticmedia-viewer.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "marked-element": "PolymerElements/marked-element#^1.4.2",
+    "common-styles": "REVERIES-project/common-styles",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^6.0.0-prerelease.5",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "resolutions": {},
+  "homepage": "https://github.com/REVERIES-project/staticmedia-viewer",
+  "version": "1.0.1",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "3cdb89cdf5d5d1e1349a4743d6ac76a5daf6ab77"
+  },
+  "_source": "https://github.com/REVERIES-project/staticmedia-viewer.git",
+  "_target": "*",
+  "_originalSource": "REVERIES-project/staticmedia-viewer"
+}
