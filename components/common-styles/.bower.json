@@ -1,0 +1,29 @@
+{
+  "name": "common-styles",
+  "description": "Style CSS applicable à l&#39;ensemble des éléments",
+  "main": "common-styles.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "paper-styles": "PolymerElements/paper-styles#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^6.0.0-prerelease.5",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "resolutions": {
+    "paper-styles": "PolymerElements/paper-styles#^1.0.0"
+  },
+  "homepage": "https://github.com/REVERIES-project/common-styles",
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "a77013b600bdf1c73d9c15bcdc15de43428d997f"
+  },
+  "_source": "https://github.com/REVERIES-project/common-styles.git",
+  "_target": "*",
+  "_originalSource": "REVERIES-project/common-styles"
+}
