@@ -116,26 +116,30 @@ L'utilisateur est informé de son résultat via les paramètres correctMessage e
                     question: {
                         type: String,
                         notify: true,
+                        observer : '_resetQuestion',
+
                     },
                     correctMessage: {
                         type: String,
                         notify: true,
+                        observer : '_resetQuestion',
+
                     },
                     wrongMessage: {
                         type: String,
                         notify: true,
+                        observer : '_resetQuestion',
+
                     },
                     correctAnswer: {
                         type: String,
                         notify: true,
+                        observer : '_resetQuestion',
                     },
                     distractorArray: {
                         type: Array,
                         notify: true,
-                    },
-                    preview: {
-                        type: Boolean,
-                        notify: true,
+                        observer : '_resetQuestion',
                     },
                     imageMode: {
                         type: Boolean,
@@ -146,11 +150,14 @@ L'utilisateur est informé de son résultat via les paramètres correctMessage e
                         type: Object,
                         notify: true,
                     },
-                    resourceLabel: {
-                        type: String,
-                        notify: true,
-                    },
                 }
+                ,
+                _resetQuestion:function(){
+                    this.responseStatus=''
+                    this.textSelected=null
+                    this.imageSelected=null
+                },
+
             });
         })();
     </script>
