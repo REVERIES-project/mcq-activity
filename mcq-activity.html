@@ -67,7 +67,7 @@ L'utilisateur est informé de son résultat via les paramètres correctMessage e
                 <template is="dom-if" if="[[media]]" restamp=true>
                     <paper-toggle-button checked={{showClue}}>Indice</paper-toggle-button>
                 </template>
-                <paper-icon-button class="validator" src="check.png" on-click="validate"></paper-icon-button>
+                <paper-icon-button class="validator" src="../../images/check.png" on-click="validate"></paper-icon-button>
 
                 <activity-feedback id="feedback" response-status=[[responseStatus]] correct-message=[[correctMessage]] wrong-message=[[wrongMessage]]></activity-feedback>
             </div>
